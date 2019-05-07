@@ -1,6 +1,14 @@
+import api from '../src/services/api.js';
+
 const test = QUnit.test;
 
 QUnit.module('api');
+
+api.storage = sessionStorage;
+
+QUnit.testStart(() => {
+    sessionStorage.clear();
+});
 
 test('round trip for user data object', (assert) => {
     // Arrange
