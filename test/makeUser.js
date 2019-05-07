@@ -1,3 +1,5 @@
+import makeUser from '../src/home/makeUser.js';
+
 const test = QUnit.test;
 
 test('make a user object from form data', assert => {
