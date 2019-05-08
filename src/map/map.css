@@ -5,3 +5,14 @@
     background-size: cover;
     margin: auto;
 }
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+#avatar-name {
+    display: flex;
+    align-items: center; 
+}
