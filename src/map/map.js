@@ -7,6 +7,10 @@ const happinessSpan = document.getElementById('happiness-points');
 
 const user = api.getUser();
 
+if(!user) {
+    window.location = './';
+}
+
 avatarImage.src = './assets/' + user.avatar + '.png';
 nameSpan.textContent = user.name;
 energySpan.textContent = user.energyPoints;
