@@ -1,0 +1,18 @@
+#map {
+    height: 400px;
+    width: 400px;
+    background-image: url('../../assets/map.jpg');
+    background-size: cover;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+#avatar-name {
+    display: flex;
+    align-items: center; 
+}
