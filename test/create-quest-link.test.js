@@ -1,4 +1,7 @@
+import createQuestLink from '../src/map/create-quest-link.js';
 const test = QUnit.test;
+
+QUnit.module('create quest link');
 
 test('returns a link element', assert => {
     // Arrange
@@ -12,5 +15,5 @@ test('returns a link element', assert => {
     const link = createQuestLink(quest);
     const actual = link.outerHTML;
     // Assert
-    assert.test(actual, expected);
+    assert.equal(actual, expected);
 });
