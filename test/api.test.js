@@ -38,6 +38,6 @@ test('get quest by id', assert => {
     const id = 'kitchen';
     const questArray = quests;
     const expected = questArray[0];
-    const actual = getQuest(id);
+    const actual = api.getQuest(id);
     assert.deepEqual(actual, expected);
 });
