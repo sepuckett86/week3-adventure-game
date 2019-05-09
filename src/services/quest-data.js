@@ -1,5 +1,6 @@
 const quest1 = {
     id: 'kitchen',
+    title: 'Kitchen',
     description: `You enter the kitchen, to scope out 
         the activity and to grab yourself a seltzer. 
         Due to the large amount of people your parents 
@@ -51,6 +52,7 @@ const quest1 = {
 
 const quest2 = {
     id: 'living-room',
+    title: 'Living Room',
     description: `You decide to go to the living room, the 
         largest room in the house. While you hoped to get some 
         space, it seems as though the majority of people had the 
@@ -98,6 +100,7 @@ const quest2 = {
 
 const quest3 = {
     id: 'patio',
+    title: 'Patio',
     description: `You decide to explore the patio to get some fresh 
         air. You feel great until you hear a group of your family 
         calling you over. "You're a year older now, time for a speech!" 

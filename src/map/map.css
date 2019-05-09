@@ -5,3 +5,7 @@
     background-size: cover;
     margin: auto;
 }
+
+#map a {
+    padding: 10px;
+}
