@@ -30,6 +30,14 @@ test('round trip for user data object', (assert) => {
 
 test('get quests array', assert => {
     const questArray = quests;
-    const expected = api.getQuests();
-    assert.deepEqual(questArray, expected);
+    const actual = api.getQuests();
+    assert.deepEqual(actual, questArray);
+});
+
+test('get quest by id', assert => {
+    const id = 'kitchen';
+    const questArray = quests;
+    const expected = questArray[0];
+    const actual = getQuest(id);
+    assert.deepEqual(actual, expected);
 });
