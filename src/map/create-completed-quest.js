@@ -5,5 +5,4 @@ function createCompletedQuest(quest) {
     return span;
 }
 
-
 export default createCompletedQuest;

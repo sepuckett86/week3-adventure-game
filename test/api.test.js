@@ -1,4 +1,5 @@
 import api from '../src/services/api.js';
+import quests from '../src/services/quest-data.js';
 
 const test = QUnit.test;
 
@@ -25,4 +26,10 @@ test('round trip for user data object', (assert) => {
 
     // Assert
     assert.deepEqual(actual, userData);
+});
+
+test('get quests array', assert => {
+    const questArray = quests;
+    const expected = api.getQuests();
+    assert.deepEqual(questArray, expected);
 });
