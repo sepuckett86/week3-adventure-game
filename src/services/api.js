@@ -1,3 +1,5 @@
+import quests from '../services/quest-data.js';
+
 const api = {
     storage: localStorage,
     signUp(userData) {
@@ -8,6 +10,9 @@ const api = {
         const json = api.storage.getItem('user');
         const user = JSON.parse(json);
         return user;
+    },
+    getQuests() {
+        return quests;
     }
 };
 
