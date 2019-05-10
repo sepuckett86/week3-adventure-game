@@ -14,6 +14,7 @@ const questTitle = document.getElementById('quest-title');
 const resultEnergy = document.getElementById('result-energy');
 const resultHappiness = document.getElementById('result-happiness');
 
+// Get info from URL and local storage
 const searchParams = new URLSearchParams(window.location.search);
 const id = searchParams.get('id');
 const quest = api.getQuest(id);
@@ -21,12 +22,12 @@ const user = api.getUser();
 
 loadProfile();
 
+// Load DOM for quest
 questTitle.textContent = quest.title;
 questDescription.textContent = quest.description;
 questImage.src = quest.image;
 
 // Display choices
-
 for(let i = 0; i < quest.choices.length; i++) {
     const choice = quest.choices[i];
     const choiceDom = createChoice(choice);
@@ -39,9 +40,10 @@ choiceForm.addEventListener('submit', event => {
     const formData = new FormData(choiceForm);
     const value = formData.get('choice-radio');
 
-    // Find choice
+    // Find choice from form data
     const choice = findById(value, quest.choices);
   
+    // Update DOM based on choice
     resultDescription.textContent = choice.result;
     resultEnergy.textContent = choice.energy + ' Energy';
     resultHappiness.textContent = choice.happiness + ' Happiness';
