@@ -6,6 +6,6 @@
     margin: auto;
 }
 
-#map a {
+#map a, span {
     padding: 10px;
 }

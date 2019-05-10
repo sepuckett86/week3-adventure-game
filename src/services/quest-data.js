@@ -51,7 +51,7 @@ const quest1 = {
 };
 
 const quest2 = {
-    id: 'living-room',
+    id: 'livingRoom',
     title: 'Living Room',
     description: `You decide to go to the living room, the 
         largest room in the house. While you hoped to get some 
