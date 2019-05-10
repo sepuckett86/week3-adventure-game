@@ -8,6 +8,7 @@ const resultSection = document.getElementById('result');
 const resultDescription = document.getElementById('result-description');
 const questDescription = document.getElementById('quest-description');
 const questImage = document.getElementById('quest-image');
+const questTitle = document.getElementById('quest-title');
 const resultEnergy = document.getElementById('result-energy');
 const resultHappiness = document.getElementById('result-happiness');
 
@@ -17,6 +18,7 @@ const quest = api.getQuest(id);
 
 loadProfile();
 
+questTitle.textContent = quest.title;
 questDescription.textContent = quest.description;
 questImage.src = quest.image;
 
