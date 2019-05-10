@@ -1,6 +1,7 @@
 import loadProfile from '../load-profile.js';
 import createChoice from '../quest/create-choice.js';
 import api from '../services/api.js';
+import scoreQuest from './score-quest.js';
 
 const choiceParent = document.getElementById('quest-choices');
 const choiceForm = document.getElementById('choice-form');
@@ -15,6 +16,7 @@ const resultHappiness = document.getElementById('result-happiness');
 const searchParams = new URLSearchParams(window.location.search);
 const id = searchParams.get('id');
 const quest = api.getQuest(id);
+const user = api.getUser();
 
 loadProfile();
 
@@ -41,6 +43,8 @@ choiceForm.addEventListener('submit', event => {
             resultDescription.textContent = choice.result;
             resultEnergy.textContent = choice.energy + ' Energy';
             resultHappiness.textContent = choice.happiness + ' Happiness';
+            api.signUp(scoreQuest(user, choice));
+            loadProfile();
         }
     }
     
