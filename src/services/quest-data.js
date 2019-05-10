@@ -127,7 +127,7 @@ const quest3 = {
         result: `You say this, and it's highly effective. "That's right! 
             It’s your day to enjoy!" Says your grandmother. You smile, 
             thankfully. Soon the conversation moves on, and you feel the 
-            joy of being loved. +10 happiness points.`,
+            joy of being loved.`,
         energy: 0,
         happiness: 10
     }, {

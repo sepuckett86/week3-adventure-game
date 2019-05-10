@@ -27,6 +27,12 @@ footer {
     border-top: 2px green solid;
 }
 
+section {
+    border: 1px black solid;
+    margin: 25px;
+    padding: 10px;
+}
+
 .hidden {
     display: none
 }
