@@ -17,8 +17,8 @@ test('round trip for user data object', (assert) => {
         name: 'Susan',
         avatar: 'woman1',
         skill: 'music',
-        energyPoints: 50,
-        happinessPoints: 0
+        energy: 50,
+        happiness: 0
     };
     // Act
     api.signUp(userData);

@@ -45,7 +45,7 @@ const quest1 = {
             be an engaging host and inquiring about who they 
             are. They turn out to be your brother's friends, 
             so that's good to know.`,
-        energy: 10,
+        energy: -10,
         happiness: 5
     }]
 };
@@ -135,7 +135,7 @@ const quest3 = {
         description: `Ask the question "do I have to?" to your talkative 
             grandmother.`,
         result: `Strategically engaging the person you know will take over 
-            the spotlight, you draw your mother-in-law into the conversation. 
+            the spotlight, you draw your grandmother into the conversation. 
             Soon, everyone is focused on her elaborate stories of her pilates 
             classes and not on your non-existent speech. You stand in the back, 
             listening, while still feeling like a part of the group. Although 

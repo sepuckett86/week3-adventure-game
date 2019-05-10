@@ -14,8 +14,8 @@ function loadProfile() {
 
     avatarImage.src = './assets/' + user.avatar + '.png';
     nameSpan.textContent = user.name;
-    energySpan.textContent = user.energyPoints;
-    happinessSpan.textContent = user.happinessPoints;
+    energySpan.textContent = user.energy;
+    happinessSpan.textContent = user.happiness;
 }
 
 export default loadProfile;

@@ -6,8 +6,8 @@ function makeUser(formData) {
         name: name,
         avatar: avatar,
         skill: skill,
-        energyPoints: 50,
-        happinessPoints: 0
+        energy: 50,
+        happiness: 0
     };
 }
 
