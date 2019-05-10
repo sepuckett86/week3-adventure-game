@@ -4,6 +4,8 @@ function createQuestLink(quest) {
     searchParams.set('id', quest.id);
     link.href = './quest.html?' + searchParams;
     link.textContent = quest.title;
+    link.style.top = quest.map.top;
+    link.style.left = quest.map.left;
     return link;
 }
 

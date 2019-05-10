@@ -8,6 +8,10 @@ const quest1 = {
         here. You listen and observe for a few seconds before 
         joining or initiating a conversation. With whom do 
         you chat?`,
+    map: {
+        top: '72%',
+        left: '10%'
+    },
     image: './assets/kitchen.jpg',
     audio: '',
     activeAudio: '',
@@ -51,7 +55,7 @@ const quest1 = {
 };
 
 const quest2 = {
-    id: 'livingRoom',
+    id: 'living-room',
     title: 'Living Room',
     description: `You decide to go to the living room, the 
         largest room in the house. While you hoped to get some 
@@ -59,6 +63,10 @@ const quest2 = {
         same idea. And they happen to be in the midst of a game 
         of charades. They call out, "Join us!" What do you do?`,
     image: './assets/living-room.jpg',
+    map: {
+        top: '55%',
+        left: '40%'
+    },
     audio: '',
     activeAudio: '',
     choices: [{
@@ -106,6 +114,10 @@ const quest3 = {
         calling you over. "You're a year older now, time for a speech!" 
         yells your brother. He knows you hate giving speeches. What 
         do you do?`,
+    map: {
+        top: '43%',
+        left: '80%'
+    },
     image: './assets/patio.jpg',
     audio: '',
     activeAudio: '',
