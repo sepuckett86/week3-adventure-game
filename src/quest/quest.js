@@ -2,6 +2,7 @@ import loadProfile from '../load-profile.js';
 import createChoice from '../quest/create-choice.js';
 import api from '../services/api.js';
 import scoreQuest from './score-quest.js';
+import findById from '../find-by-id.js';
 
 const choiceParent = document.getElementById('quest-choices');
 const choiceForm = document.getElementById('choice-form');
@@ -25,6 +26,7 @@ questDescription.textContent = quest.description;
 questImage.src = quest.image;
 
 // Display choices
+
 for(let i = 0; i < quest.choices.length; i++) {
     const choice = quest.choices[i];
     const choiceDom = createChoice(choice);
@@ -37,17 +39,15 @@ choiceForm.addEventListener('submit', event => {
     const formData = new FormData(choiceForm);
     const value = formData.get('choice-radio');
 
-    for(let i = 0; i < quest.choices.length; i++) {
-        const choice = quest.choices[i];
-        if(choice.id === value) {
-            resultDescription.textContent = choice.result;
-            resultEnergy.textContent = choice.energy + ' Energy';
-            resultHappiness.textContent = choice.happiness + ' Happiness';
-            api.saveUser(scoreQuest(user, choice));
-            loadProfile();
-        }
-    }
-    
+    // Find choice
+    const choice = findById(value, quest.choices);
+  
+    resultDescription.textContent = choice.result;
+    resultEnergy.textContent = choice.energy + ' Energy';
+    resultHappiness.textContent = choice.happiness + ' Happiness';
+    api.saveUser(scoreQuest(user, choice));
+    loadProfile();
+
     resultSection.classList.remove('hidden');
     choiceForm.classList.add('hidden'); 
 });
