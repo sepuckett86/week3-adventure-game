@@ -7,7 +7,8 @@ function makeUser(formData) {
         avatar: avatar,
         skill: skill,
         energy: 50,
-        happiness: 0
+        happiness: 0,
+        completed: {}
     };
 }
 

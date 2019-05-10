@@ -18,6 +18,7 @@ test('make a user object from form data', assert => {
         avatar: 'woman1',
         skill: 'music',
         energy: 50,
-        happiness: 0
+        happiness: 0,
+        completed: {}
     });
 });
