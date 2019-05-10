@@ -36,11 +36,10 @@ choiceForm.addEventListener('submit', event => {
         if(choice.id === value) {
             resultDescription.textContent = choice.result;
             resultEnergy.textContent = choice.energy + ' Energy';
-            resultHappiness.textContent =  choice.happiness + ' Happiness';
+            resultHappiness.textContent = choice.happiness + ' Happiness';
         }
     }
     
     resultSection.classList.remove('hidden');
-    choiceForm.classList.add('hidden');
-    
-})
+    choiceForm.classList.add('hidden'); 
+});
