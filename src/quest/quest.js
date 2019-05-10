@@ -47,7 +47,7 @@ choiceForm.addEventListener('submit', event => {
     resultDescription.textContent = choice.result;
     resultEnergy.textContent = choice.energy + ' Energy';
     resultHappiness.textContent = choice.happiness + ' Happiness';
-    api.saveUser(scoreQuest(user, choice));
+    api.saveUser(scoreQuest(user, choice, quest.id));
     loadProfile();
 
     resultSection.classList.remove('hidden');
