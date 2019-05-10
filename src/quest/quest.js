@@ -7,6 +7,7 @@ const choiceForm = document.getElementById('choice-form');
 const resultSection = document.getElementById('result');
 const resultDescription = document.getElementById('result-description');
 const questDescription = document.getElementById('quest-description');
+const questImage = document.getElementById('quest-image');
 const resultEnergy = document.getElementById('result-energy');
 const resultHappiness = document.getElementById('result-happiness');
 
@@ -17,6 +18,7 @@ const quest = api.getQuest(id);
 loadProfile();
 
 questDescription.textContent = quest.description;
+questImage.src = quest.image;
 
 // Display choices
 for(let i = 0; i < quest.choices.length; i++) {

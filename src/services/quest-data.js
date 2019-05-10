@@ -8,7 +8,7 @@ const quest1 = {
         here. You listen and observe for a few seconds before 
         joining or initiating a conversation. With whom do 
         you chat?`,
-    image: '',
+    image: './assets/kitchen.jpg',
     audio: '',
     activeAudio: '',
     choices: [{
@@ -58,7 +58,7 @@ const quest2 = {
         space, it seems as though the majority of people had the 
         same idea. And they happen to be in the midst of a game 
         of charades. They call out, "Join us!" What do you do?`,
-    image: '',
+    image: './assets/living-room.jpg',
     audio: '',
     activeAudio: '',
     choices: [{
@@ -106,7 +106,7 @@ const quest3 = {
         calling you over. "You're a year older now, time for a speech!" 
         yells your brother. He knows you hate giving speeches. What 
         do you do?`,
-    image: '',
+    image: './assets/patio.jpg',
     audio: '',
     activeAudio: '',
     choices: [{
