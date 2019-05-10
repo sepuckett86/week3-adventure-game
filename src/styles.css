@@ -1,8 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Raleway');
+
+html {
+    background-image: linear-gradient(to right, #8F78AD, #D6DBE8);
+    line-height: 1.5em;
+}
+
 header {
     border-bottom: 2px green solid;
     display: flex;
     justify-content: space-around;
     align-items: center; 
+}
+
+h1, h2, h3 {
+    font-family: 'Indie Flower', cursive;
+}
+
+h1 {
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 36px;
 }
 
 #avatar-name {
@@ -16,6 +37,7 @@ main {
 
 body {
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 .add-margin {
@@ -28,11 +50,17 @@ footer {
 }
 
 section {
-    border: 1px black solid;
+    border: 2px black solid;
     margin: 25px;
     padding: 10px;
+    background: rgb(255, 255, 255, 0.6);
 }
 
 .hidden {
     display: none
+}
+
+button {
+    font-size: 24px;
+    margin: 10px;
 }
