@@ -43,7 +43,7 @@ choiceForm.addEventListener('submit', event => {
             resultDescription.textContent = choice.result;
             resultEnergy.textContent = choice.energy + ' Energy';
             resultHappiness.textContent = choice.happiness + ' Happiness';
-            api.signUp(scoreQuest(user, choice));
+            api.saveUser(scoreQuest(user, choice));
             loadProfile();
         }
     }

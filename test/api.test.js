@@ -21,7 +21,7 @@ test('round trip for user data object', (assert) => {
         happiness: 0
     };
     // Act
-    api.signUp(userData);
+    api.saveUser(userData);
     const actual = api.getUser();
 
     // Assert
