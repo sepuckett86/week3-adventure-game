@@ -3,11 +3,17 @@ import loadProfile from '../load-profile.js';
 import createQuestLink from './create-quest-link.js';
 import createCompletedQuest from './create-completed-quest.js';
 import api from '../services/api.js';
+import hasCompletedAllQuests from './has-completed-all-quests.js';
+import isDepleted from './is-depleted.js';
 
 const linkParent = document.getElementById('map');
 
 loadProfile();
 const user = api.getUser();
+
+if(hasCompletedAllQuests(quests, user) || isDepleted(user)) {
+    window.location = './end.html';
+}
 
 let questDom;
 
