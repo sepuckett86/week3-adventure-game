@@ -1,3 +1,24 @@
 button {
     font-size: 24px;
 }
+
+/* Source https://stackoverflow.com/questions/17541614/use-images-instead-of-radio-buttons */
+/* HIDE RADIO */
+#avatars [type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* IMAGE STYLES */
+#avatars [type=radio] + img {
+    cursor: pointer;
+    margin: 3px;
+    padding-top: 2px;
+}
+  
+/* CHECKED STYLES */
+#avatars [type=radio]:checked + img {
+    box-shadow: 0 0 3px 3px purple;
+    border-radius: 25%;
+}

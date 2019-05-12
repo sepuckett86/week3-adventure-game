@@ -32,7 +32,8 @@ h2 {
 }
 
 main {
-    margin: 30px
+    margin: 30px auto;
+    max-width: 900px;
 }
 
 body {
@@ -70,3 +71,6 @@ button {
 button:hover {
     cursor: pointer;
 }
+
+
+  
