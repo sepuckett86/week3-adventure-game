@@ -1,10 +1,8 @@
+import isDepleted from '../src/map/is-depleted.js';
+
 const test = QUnit.test;
 
 QUnit.module('is depleted');
-
-function isDepleted(user) {
-    return user.energy <= 0;
-}
 
 test('return true if energy below 0', assert => {
     const user = {
