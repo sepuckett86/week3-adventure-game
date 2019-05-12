@@ -7,3 +7,5 @@ import './score-quest.test.js';
 import './find-by-id.test.js';
 import './has-completed-all-quests.test.js';
 import './is-depleted.test.js';
+import './score-energy.test.js';
+import './score-happiness.test.js';
