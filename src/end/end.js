@@ -6,6 +6,7 @@ import hasCompletedAllQuests from '../map/has-completed-all-quests.js';
 import scoreEnergy from './score-energy.js';
 import scoreHappiness from './score-happiness.js';
 import api from '../services/api.js';
+import quests from '../services/quest-data.js';
 
 const endMessageElement = document.getElementById('end-message');
 const endImageElement = document.getElementById('end-image');
@@ -15,7 +16,7 @@ const energy = scoreEnergy(user);
 const happiness = scoreHappiness(user);
 
 let endMessage = '';
-if(hasCompletedAllQuests(user)) {
+if(hasCompletedAllQuests(quests, user)) {
     endMessage = `You made it to all parts of the house 
     during your party and head to the bedroom for a well-deserved rest. ` + 
     energyOutcomes[energy] + ' ' + happinessOutcomes[happiness];
