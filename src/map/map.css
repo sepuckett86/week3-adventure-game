@@ -4,15 +4,23 @@
     background-image: url('../../assets/map.jpg');
     background-size: cover;
     margin: auto;
+    position: relative;
+    border: black 3px solid;
 }
 
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
+#map a, #map span {
+    padding: 10px;
+    position: absolute;
+    background: rgb(255, 255, 255, .8);
+    border-radius: 5px;
 }
 
-#avatar-name {
-    display: flex;
-    align-items: center; 
+#map a {
+    border: 0.5rem outset #8F78AD;
+    border-radius: 5px;
+}
+
+#map span {
+    background: rgb(255, 255, 255, .8);
+    text-decoration: line-through;
 }

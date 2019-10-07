@@ -1,17 +1,25 @@
+import quests from '../services/quest-data.js';
+import loadProfile from '../load-profile.js';
+import createQuestLink from './create-quest-link.js';
+import createCompletedQuest from './create-completed-quest.js';
 import api from '../services/api.js';
 
-const avatarImage = document.getElementById('avatar');
-const nameSpan = document.getElementById('name');
-const energySpan = document.getElementById('energy-points');
-const happinessSpan = document.getElementById('happiness-points');
+const linkParent = document.getElementById('map');
 
+loadProfile();
 const user = api.getUser();
 
-if(!user) {
-    window.location = './';
-}
+let questDom;
 
-avatarImage.src = './assets/' + user.avatar + '.png';
-nameSpan.textContent = user.name;
-energySpan.textContent = user.energyPoints;
-happinessSpan.textContent = user.happinessPoints;
+for(let i = 0; i < quests.length; i++) {
+    const quest = quests[i];
+
+    if(user.completed[quest.id]) {
+        questDom = createCompletedQuest(quest);
+    }
+    else {
+        questDom = createQuestLink(quest);
+    }
+
+    linkParent.appendChild(questDom);
+}

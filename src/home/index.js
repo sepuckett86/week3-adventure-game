@@ -7,7 +7,7 @@ createCharacterForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const formData = new FormData(createCharacterForm);
     const userObject = makeUser(formData);
-    api.signUp(userObject);
+    api.saveUser(userObject);
     window.location = './map.html';
 });
 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quest Page</title>
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="./src/quest/quest.css">
+</head>
+<body>
+    <header>
+        <div id="avatar-name">
+            <img id="avatar" alt="avatar" src="./assets/woman1.png">
+            <span id="name"></span>
+        </div>
+        <h1>
+            Introvert Quest
+        </h1>
+        <div id="stats">
+            Energy: <span id="energy-points"></span>
+            Happiness: <span id="happiness-points"></span>
+        </div>
+    </header>
+    <main>
+        <section id="quest">
+            <h2 id="quest-title">
+                Quest Title
+            </h2>
+            <img id="quest-image" alt="quest-image">
+            <p id="quest-description">
+                Quest Description
+            </p>
+            <form id="choice-form">
+                <p id="quest-choices">
+                </p>
+                <button>Choose</button>
+            </form>
+        </section>
+        <section id="result" class="hidden">
+            <h2>Result</h2>
+            <p id="result-description">Result Description</p>
+            <p id="result-energy"></p>
+            <p id="result-happiness"></p>
+            <a href="./map.html">Back to Map</a>
+        </section>
+    </main>
+    <footer>
+        <h3>Image Source Here</h3>
+    </footer>
+    <script type="module" src="src/quest/quest.js"></script>
+</body>
+</html>
