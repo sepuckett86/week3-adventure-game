@@ -5,3 +5,13 @@ Your family is throwing a giant party for your birthday. Wonderful news, but con
 ## Play here
 
 https://sepuckett86.github.io/week3-adventure-game/
+
+## Tech Stack
+
+* Vanilla JS
+* TravisCI
+* QUnit
+
+## Made By
+
+* @sepuckett86
