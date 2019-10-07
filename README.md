@@ -14,4 +14,4 @@ https://sepuckett86.github.io/week3-adventure-game/
 
 ## Made By
 
-* @sepuckett86
+* [sepuckett86](https://www.github.com/sepuckett86)
