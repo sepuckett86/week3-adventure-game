@@ -9,6 +9,7 @@ https://sepuckett86.github.io/week3-adventure-game/
 ## Tech Stack
 
 * Vanilla JS
+* HTML/CSS
 * TravisCI
 * QUnit
 
