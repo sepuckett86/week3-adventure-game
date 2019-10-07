@@ -1,4 +1,4 @@
-# Introvert Quest
+# 💁 Introvert Quest 💁
 
 Your family is throwing a giant party for your birthday. Wonderful news, but congratulations, you are an introvert! How do you make the most of your party without running out of energy?
 
